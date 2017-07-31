@@ -1,5 +1,11 @@
 #BlueJ class context
-comment0.params=e1\ e2\ fragLen
+comment0.params=e1\ e2\ fragLenArr
 comment0.target=EnzymeGroup(Enzyme,\ Enzyme,\ int[])
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ EnzymeGroup\r\n
-numComments=1
+comment1.params=
+comment1.target=int[]\ getFragLenArr()
+comment2.params=num
+comment2.target=Enzyme\ getEnzyme(int)
+comment3.params=
+comment3.target=java.lang.String[]\ getEnzymeNames()
+numComments=4

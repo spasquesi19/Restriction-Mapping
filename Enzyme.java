@@ -8,15 +8,21 @@
 public class Enzyme
 {
     String name;
-    int[] fragLen;
+    int[] fragLenArr;
     /**
      * Constructor for objects of class Enzyme
      */
-    public Enzyme(String name, int[] fragLen)
+    public Enzyme(String name, int[] fragLenArr)
     {
         this.name = name;
-        this.fragLen = fragLen;
+        this.fragLenArr = fragLenArr;
     }
     
+    public int[] getFragLenArr() {
+        return fragLenArr;
+    }
     
+    public String getName() {
+        return name;
+    }
 }

@@ -7,27 +7,31 @@
  */
 public class EnzymeGroup
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    Enzyme e1;
+    Enzyme e2;
+    int[] fragLen;
     /**
      * Constructor for objects of class EnzymeGroup
      */
-    public EnzymeGroup()
+    public EnzymeGroup(Enzyme e1, Enzyme e2, int[] fragLen)
     {
-        // initialise instance variables
-        x = 0;
+        this.e1=e1;
+        this.e2=e2;
+        this.fragLen=fragLen;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public int[] getFragLen() {
+        return fragLen;
+    }
+    
+    public Enzyme getEnzyme(int num) {
+        if(num==1)
+            return e1;
+        else
+            return e2;
+    }
+    
+    public String[] getEnzymeNames() {
+        return new String[] {e1.name, e2.name};
     }
 }
