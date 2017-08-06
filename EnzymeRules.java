@@ -5,14 +5,14 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Enzyme
+public class EnzymeRules
 {
     String name;
     int[] fragLenArr;
     /**
-     * Constructor for objects of class Enzyme
+     * Constructor for objects of class EnzymeRules
      */
-    public Enzyme(String name, int[] fragLenArr)
+    public EnzymeRules(String name, int[] fragLenArr)
     {
         this.name = name;
         this.fragLenArr = fragLenArr;

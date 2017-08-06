@@ -55,7 +55,7 @@ public class Map
     }
     
     public void circularMap() {
-        Object[][] circle = new Object[][2];
+        Object[][] circle = new Object[][];
         int totalLen = eArr[0].getTotalLength();
         
         
