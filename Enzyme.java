@@ -25,4 +25,12 @@ public class Enzyme
     public String getName() {
         return name;
     }
+    
+    public int getTotalLength() {
+        int len = 0;
+        for(int i=0; i<fragLenArr.length; i++) {
+            len+=fragLenArr[i];
+        }
+        return len;
+    }
 }

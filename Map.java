@@ -24,6 +24,12 @@ public class Map
         for(int i=0; i<gs.length; i++){
             gArr[i] = gs[i];
         }
+        
+        int length = 0;
+        for(int i =0; i<eArr[0].getFragLenArr().length; i++){
+            length+=eArr[0].getFragLenArr()[i];
+        }
+        this.length = length;
     }
     
     public boolean check(){
@@ -48,19 +54,10 @@ public class Map
         return eFragNum == gFragNum;
     }
     
-    public void linearMap() {
+    public void circularMap() {
+        Object[][] circle = new Object[][2];
+        int totalLen = eArr[0].getTotalLength();
         
-    }
-    
-    public int mapLength() {
-        int mapLen = 0;
-        for(int i =0; i<eArr[0].getFragLenArr().length; i++){
-            mapLen+=eArr[0].getFragLenArr()[i];
-        }
-        return mapLen;
-    }
-    
-    public void setUp() {
-        length = mapLength();
+        
     }
 }
